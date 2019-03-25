@@ -1,0 +1,21 @@
+.mainheader{
+    display: flex;
+    justify-content: center;
+    color: brown;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.error{
+    color: red;
+    font-size: 40px;
+}
+
+.capt{
+    display: flex;
+    justify-content: center;
+    color: cornflowerblue;
+    font-size: 30px;
+    text-transform: uppercase;
+
+}
