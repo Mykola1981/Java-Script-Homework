@@ -1,0 +1,15 @@
+:root {--lab-color: red;
+    --lab-font-size: 40px;
+    --result-color: black;
+    --result-font-size: 30px;
+}
+
+.lab {color: var(--lab-color);
+    font-size: var(--lab-font-size);
+    text-transform: uppercase;
+}
+
+.result{
+    color: var(--result-color);
+    font-size: var(--result-font-size);
+}
