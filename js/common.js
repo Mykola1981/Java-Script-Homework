@@ -11,7 +11,6 @@ function GetData() {
     var id = document.querySelector(".id").value;
     var ShowPersonInfo = Validate();
     ShowPersonInfo(name, surname, amount, period, id);
-    
 }
 
 CurrencyRequest();
@@ -45,18 +44,11 @@ function Validate() {
         SaveData(name, surname, amount, period);
         var client = new Constructer(name, surname, amount, period);
         clientarr.push(client);
-        console.log (clientarr);
         }
     }   
 }
 
 function Aftervalidate(name, surname, amount, period, id) {
-    console.log("name = ", name);
-    console.log("surname = ", surname);
-    console.log("amount = ", amount);
-    console.log("period = ", period);
-    console.log("id = ", id);
-
    
     var name1 = document.querySelector(".name1");    
     name1.innerHTML = name;
@@ -68,7 +60,6 @@ function Aftervalidate(name, surname, amount, period, id) {
     period1.innerHTML = period;
     
 }
-
 
 function Persent(rand) {
     var rand = Math.floor(Math.random() * 6)+10;
@@ -90,10 +81,8 @@ function SaveData(name, surname, amount, period) {
 
 function ShowPersonInfo() {
     ClientDB.forEach(function (item, key) {
-        console.log(item, " ", key);
+    console.log(item, " ", key);
     })
-    console.log("ClinetDB length", ClientDB.length);
-    console.log("==============================>>>>>");
     console.log("New Client Added");
 }
 
@@ -102,7 +91,6 @@ function Constructer(name, surname, amount, period){
     this.surname = surname;
     this.amount = amount;
     this.period = period;
-
 }
 
 function CurrencyRequest() {
